@@ -22,9 +22,19 @@ class MyApp extends StatelessWidget {
             ),
             Text(
               'Ali Mohammed',
+              style: TextStyle(
+                color: Colors.white,
+                fontSize: 40,
+                fontFamily: "Caveat",
+              ),
             ),
             Text(
               'flutter developer',
+              style: TextStyle(
+                color: Colors.blue[100],
+                fontSize: 24,
+                letterSpacing: 4,
+              ),
             ),
             SizedBox(
               height: 20.0,
@@ -33,47 +43,18 @@ class MyApp extends StatelessWidget {
                 color: Colors.blue.shade100,
               ),
             ),
-            Container(
-              margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
-              padding: EdgeInsets.all(25),
-              color: Colors.white,
-              child: Row(
-                children: [
-                  Icon(
-                    Icons.phone,
-                    color: Colors.blue,
-                  ),
-                  SizedBox(
-                    width: 10,
-                  ),
-                  Text(
-                    '+972 592 020 888',
-                    // style: TextStyle(
-                    //   color: Colors.blue.shade900,
-                    //   fontFamily: 'Source Sans Pro',
-                    //   fontSize: 20.0,
-                    // ),
-                  ),
-                ],
+            Card(
+              margin: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+              child: ListTile(
+                leading: Icon(Icons.email),
+                title: Text('Ahmed Hussam'),
               ),
             ),
-            Container(
-              margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
-              padding: EdgeInsets.all(25),
-              color: Colors.white,
-              child: Row(
-                children: [
-                  Icon(
-                    Icons.mail,
-                    color: Colors.blue,
-                  ),
-                  SizedBox(
-                    width: 10,
-                  ),
-                  Text(
-                    'ali@gmail.com',
-                  ),
-                ],
+            Card(
+              margin: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+              child: ListTile(
+                leading: Icon(Icons.phone),
+                title: Text('+972 592 020 899'),
               ),
             ),
           ],
